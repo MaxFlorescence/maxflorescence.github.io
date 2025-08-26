@@ -1,9 +1,10 @@
 import './App.css';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages'
 import Projects from './pages/projects'
+import Contact from './pages/contact'
 
 function App() {
   useEffect(() => {
@@ -15,7 +16,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/projects/' element={<Projects />} />
+        <Route path='/projects/*' element={<Projects />} />
+        <Route path='/contact/' element={<Contact />} />
       </Routes>
     </Router>
   );
