@@ -2,7 +2,7 @@ import { NavLink as Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-  font-size: 1.5vw;
+  font-size: 2vw*1vh;
   font-family: 'Open Sans', Helvetica, sans-serif;
   background:rgb(0, 36, 8);
   display: flex;
@@ -16,7 +16,7 @@ export const NavMenu = styled.div`
 `
 
 export const NavLogo = styled.div`
-  color:rgb(20, 133, 54);
+  color: #3bc464;
   padding: 0 1vw;
   display: flex;
   align-items: center;

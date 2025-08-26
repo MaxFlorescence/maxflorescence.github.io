@@ -4,15 +4,18 @@ const Navbar = () => {
     return (
         <>
             <Nav>
+                <NavLogo>
+                    Maxine Kampbell
+                </NavLogo>
                 <NavMenu>
-                    <NavLogo>
-                        Maxine Kampbell
-                    </NavLogo>
                     <NavLink to="/">
                         Home
                     </NavLink>
                     <NavLink to="/projects">
                         Projects
+                    </NavLink>
+                    <NavLink to="/contact">
+                        Contact
                     </NavLink>
                 </NavMenu>
             </Nav>
